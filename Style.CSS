@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", system-ui, sans-serif;
+    background: #eef2f7;
+    color: #1b2433;
+    min-height: 100vh;
+
+}
+
+body {
+    font-family: "Segoe UI", system-ui, sans-serif;
+    background: #eef2f7;
+    color: #1b2433;
+    min-height: 100vh;
+
+    display: grid;
+    /* new */
+    place-items: center;
+    /* new */
+    padding: 24px;
+    /* new */
+}
+
+.login-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    padding: 40px 32px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(20, 33, 61, 0.1);
+}
+
+.login-card h1 {
+    font-size: 1.75rem;
+    margin-bottom: 8px;
+}
+
+.login-card p {
+    color: #0870d9;
+    margin-bottom: 24px;
+}
+
+.field {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 14px;
+    font: inherit;
+    color: #1b2433;
+    border: 1.5px solid #cfd8e3;
+    border-radius: 8px;
+}
+
+input:focus {
+    outline: 3px solid #0f8b8d;
+    outline-offset: 1px;
+    border-color: #0f8b8d;
+}
+
+a {
+    color: #0b6b6d;
+}
+
+form a {
+    display: inline-block;
+    margin-bottom: 24px;
+    font-size: 0.9rem;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    font: inherit;
+    font-weight: 700;
+    color: #cf2f2f;
+    background: #0edade;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #b8bebe;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 16px;
+        align-items: start;
+    }
+
+    .login-card {
+        padding: 28px 20px;
+        margin-top: 24px;
+    }
+
+    .login-card h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.password-wrap {
+    position: relative;
+}
+
+.password-wrap input {
+    padding-right: 72px;
+}
+
+.toggle {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 6px 8px;
+    background: none;
+    color: #181919;
+    font-weight: 600;
+}
+
+.toggle:hover {
+    background: none;
+    text-decoration: underline;
+}
+
+.login-card .signup {
+    margin: 24px 0 0;
+    text-align: center;
+    font-size: 0.95rem;
+}
